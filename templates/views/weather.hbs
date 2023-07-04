@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+    
+    {{>navbar}}
+
+    <div class="main_content">
+        <form class="temp_form">
+            <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+            <input type="submit" value="search" id="submitBtn">
+        </form>
+    </div>
+
+    <div class="tempInformation">
+        <div class="top_layer">
+            <p id="day">Wednesday</p>
+            <p id="today_date">28 June</p>
+        </div>
+        <div class="main_layer">
+            <p id="city_name">Get output here</p>
+            <div class="middle_layer data_hide">
+                <p><span id="temp">0</span><sup>o</sup>C</p>
+                <p id="temp_status"><i class="fa fa-cloud"></i></p>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
